@@ -1,0 +1,21 @@
+interface Sahila{
+   void eat();
+}
+interface Sahilb {
+   void drink();
+}
+class Sahil implements Sahila, Sahilb {
+   public void eat() {
+      System.out.println("Sahil eats jalebi");
+   }
+   public void drink() {
+      System.out.println("sahil drinks tea");
+   }
+}
+class Main {
+   public static void main(String args[]) {
+      Sahil a = new Sahil();
+      a.eat();
+      a.drink();
+   }
+}
