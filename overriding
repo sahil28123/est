@@ -1,0 +1,27 @@
+class Sahil {
+
+  // overridden method
+  public void display(){
+    System.out.println("My name is sahil");
+  }
+}
+
+class Human extends Sahil {
+
+  // overriding method
+  @Override
+  public void display(){
+    System.out.println("I am an entrepreneur");
+  }
+
+  public void printMessage(){
+    display();
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Human Human1 = new Human();
+    Human1.printMessage();
+  }
+}
